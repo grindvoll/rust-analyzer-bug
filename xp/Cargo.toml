@@ -1,0 +1,9 @@
+[package]
+name = "xp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+xp-derive ={ path = "../xp-derive" }  # The derive part is really an internal crate, but we rely on it in the core crate.
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
